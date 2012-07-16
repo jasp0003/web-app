@@ -209,7 +209,7 @@ nav a:visited {
 	margin-left:-49px;
 	margin-right: 3px;
 	margin-bottom:-30px;
-	margin-top:21px;
+	margin-top:-13px;
 	
 	
 	padding-bottom:-55px;
@@ -236,7 +236,9 @@ button:hover{
 	
 	
 
-
+form div{
+	padding-top:20px;
+}
 
 	
 	
