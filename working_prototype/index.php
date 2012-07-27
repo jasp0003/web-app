@@ -1,44 +1,94 @@
-<?php
-
-require_once 'includes/db.php';
-
-$sql = $db->query('
-    SELECT id, garden_name, garden_address, 
-    FROM gardens
-    ORDER BY garden_name ASC
-');
-
-// Display the last error created by our database
-var_dump($db->errorInfo());
-$results = $sql->fetchAll();
-
-
-?><!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
 <head>
 <meta charset="utf-8">
-<title>Gardens</title>
+<title>Homepage</title>
 <link href="css/general.css" rel="stylesheet">
 </head>
+
+
+
 <body>
-
-     <a href="add.php">Add a Garden</a>
-
-    <?php foreach ($results as $movie): ?>
-    <h2>
-        <a href="single.php?id=<?php echo $garden['id']; ?>">
-		<?php echo $garden['garden_name']; ?>
-        </a>
-         </h2>
-         
+<div class="content">
+	<header>
     
-    <dl>
-      <dt>garden name</dt>
-      <dd><?php echo $garden['garden_name']; ?></dd>
-      <dt>garden address</dt>
-      <dd><?php echo $garden['garden_address']; ?></dd>
-      </dl>
-      <?php endforeach; ?>
+     <h1><img src="#" alt="Walia Garden's"></h1>
+     
+     
+    
+        
+       
+          <nav> 
+           
+				<ul>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="gardens.php">Gardens</a></li>
+                     <li><a href="parks.php">Parks</a></li>
+					<li><a href="trip planner.html">Trip Planner</a></li>
+                    
+				</ul>
+	    </nav>
+      
+      </header>
+  
+       </div>
+           
+          
+          
+          
+      
+       
+        
+       <div class="decorativeimages">
+       <figure>
+       <img src="images/flowers32.jpg" alt="">
+        </figure>
+       <figure>
+       <img src="images/flower3.jpg" alt="">
+       </figure>
+       <figure>
+       <img src="images/hui.jpg" alt="">
+       </figure>
+       <figure>
+       <img src="images/se.jpg" alt="">
+       </figure>
+       
+       
+       </div>
+       
+      
+       
+       
+       <div>
+       
+       <div class="rightimage">
+       <figure>
+       <img src="images/gate.jpg" alt="">
+        </figure>
+        </div>
+        
+        
+        
+         
+         
+         
+         <div>
+         <p>
+         Escape To Paradise</br>
+              Contact Us:</br>
+            Prabhjot Jaspal</br>
+            prabh86@gmail.com</br>
+            613-618-9443</br>
+            64- Wylie Avenue
+            </p>
+            </div>
+            
+            
+
+
+       
+
 
 </body>
+
 </html>

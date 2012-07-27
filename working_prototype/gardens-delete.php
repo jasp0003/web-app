@@ -5,16 +5,16 @@ require_once 'includes/db.php';
 $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 
 if (empty($id)) {
-	header('Location: park-index.php');
+	header('Location: gardens.php');
     exit; 
 }
 
 $sql = $db->prepare('
-DELETE FROM parks
+DELETE FROM gardens 
 WHERE id = :id
 ');
 $sql->bindValue(':id', $id, PDO::PARAM_INT);
 $sql->execute();
 
-header('Location: park-index.php');
+header('Location: gardens.php');
 exit;

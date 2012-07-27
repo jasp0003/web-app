@@ -10,7 +10,7 @@ $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
  // By using prepare we are protecting against SQL injection attacks
  
 $sql = $db->prepare('
-   SELECT id, park_name, park_address,
+   SELECT id, park_name, park_address
    FROM parks
    WHERE id = :id
    
@@ -40,7 +40,8 @@ $sql = $db->prepare('
       <dd><?php echo $results['park_address']; ?></dd>
       </dl>
       
-      <a href="park-delete.php?id=<?php echo $id; ?>">Delete</a>
-      <a href="edit.php?id=<?php echo $id; ?>">Edit</a>
+ 
+      
+      <a href="index.php?id=<?php echo $id; ?>">Back</a>
 </body>
 </html>
