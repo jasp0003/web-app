@@ -20,7 +20,7 @@ $sql = $db->prepare('
  // bindValue(placeholder, variable, datatype)
  $sql->bindvalue(':id', $id,  PDO::PARAM_INT);
  $sql->execute();
- var_dump($db->errorInfo());
+ 
  $results = $sql->fetch();
  
  

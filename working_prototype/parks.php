@@ -9,7 +9,7 @@ $sql = $db->query('
 ');
 
 // Display the last error created by our database
-var_dump($db->errorInfo());
+
 $results = $sql->fetchAll();
 
 
@@ -55,54 +55,14 @@ $results = $sql->fetchAll();
     
     
       <?php endforeach; ?>
-
-
-
-
-
-
-      
-      
-
-
-
-
-
-
-
-
-<div class="content">
+  <div class="content">
 	<header>
     
    
      
      
-    
-        
+    <a href="index.php">back</a>
        
-       
-           
-          
-          
-          
-     
-       
-        
-       
-       
-      
-        
-        
-         
-         
-         
-          <a href="index.php">back</a>
-       
-
-
-
-
-
 
 </body>
 </html>
