@@ -1,4 +1,15 @@
 <?php
+/**
+.* Small description of this file:
+.* Lists all the parks in the database
+.*
+.* @author Prabhjot Jaspal <jasp0003@algonquincollege.com>
+.* @copyright 2012 Prabhjot Jaspal
+.* @license BSD-3-Clause <http://github.com/.../license.txt>
+.* @version 1.0.0
+.* @package web-app
+.*/
+
 
 require_once 'includes/db.php';
 
