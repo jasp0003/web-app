@@ -31,12 +31,14 @@ $sql = $db->prepare('
 <head>
 <meta charset="utf-8">
 <title><?php  echo $results['park_name']; ?> &middot; parks</title>
+<link href="css/general.css" rel="stylesheet">
 </head>
 <body>
 
 <h1><?php  echo $results['park_name']; ?></h1>
+
   <dl>
-      <dt>park address</dt>
+      <dt class="parks">park address</dt>
       <dd><?php echo $results['park_address']; ?></dd>
       </dl>
       

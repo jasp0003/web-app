@@ -24,7 +24,7 @@
 					<li><a href="index.php">Home</a></li>
 					<li><a href="gardens.php">Gardens</a></li>
                      <li><a href="parks.php">Parks</a></li>
-					<li><a href="trip planner.html">Trip Planner</a></li>
+					
                     
 				</ul>
 	    </nav>
