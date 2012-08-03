@@ -3,10 +3,10 @@ This  web-app describes about the walia gardens web-app that describes trip thro
 
 
 Author Info:
--Created by: Prabhjot Jaspal
--student  of Algonquin College
--Starting date: 14.06.2012
--ending date: 02.08.2012
+- Created by: Prabhjot Jaspal
+- student  of Algonquin College
+- Starting date: 14.06.2012
+- ending date: 02.08.2012
 
 
 Link to PHPfog:
