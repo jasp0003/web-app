@@ -10,7 +10,7 @@ Author Info:
 
 
 Link to PHPfog:
-waliagardens.phpfogapp.com
+http://waliagardens.phpfogapp.com/working_prototype/
 
 
 Installation Instructions:
